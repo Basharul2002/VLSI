@@ -151,14 +151,32 @@ The EX-NOR gate produces a true output if its inputs are the same.
 Adders are digital circuits that perform addition of numbers.
 
 ### Half Adder
-A half adder adds two binary digits and produces a sum bit (S) and a carry bit (C).
+Half adder is a combinational circuit which computer binary addition of two binary inputs. It is one of the basic combinational circuit in which we have combination of two gates (ex-or gate, and gate). The truth table of half adder is given below and we can write boolean expression for half adder as follows
 
 ![Half Adder](images/half_adder.png)
 
+#### Truth Table:
+| Input A | Input B | Output Sum | Output Carry |
+|    0    |    0    |     0      |       0      |
+|    0    |    1    |     1      |       0      |
+|    1    |    0    |     1      |       0      |
+|    1    |    1    |     1      |       1      |
+
 ### Full Adder
-A full adder adds three binary digits and produces a sum bit (S) and a carry bit (C).
+Full adder is a combinational circuit which computer binary addition of three binary inputs. The truth table of full adder is given below and we can write boolean expression for full adder as follows
 
 ![Full Adder](images/full_adder.png)
+
+#### Truth Table:
+| Input A | Input B | Input Cin | Output Sum | Output Carry |
+|    0    |    0    |     0     |     0      |       0      |
+|    0    |    0    |     1     |     1      |       0      |
+|    0    |    1    |     0     |     1      |       0      |
+|    0    |    1    |     1     |     0      |       1      |
+|    1    |    0    |     0     |     1      |       0      |
+|    1    |    0    |     1     |     0      |       1      |
+|    1    |    1    |     0     |     0      |       1      |
+|    1    |    1    |     1     |     1      |       1      |
 
 ---
 
@@ -167,12 +185,37 @@ A full adder adds three binary digits and produces a sum bit (S) and a carry bit
 Flip-flops are digital circuits used to store binary data.
 
 ### D Flip-Flop
-A D flip-flop stores one bit of data. It has a data input (D), a clock input (CLK), and an output (Q).
+D flip-flop is the most important flip-flop in digitial circuit. In this tutorial, we'll descrive D flip-fop in Verilog HDL without reset, with synchronous and asynchronous reset.
+
+D flip-flop is also known as delay type flip-flop because output of d flip-flop is 1 clock pulse delay of the input appled to the d flip-flop . The truth table of positive edge triggered D flip-flop is given below. When there is negative edge trigger clock, it stores the previous input applied to the flip-flop. In positive edge trigger of clock, input of the d flip-flop is stored.
+
 
 ![D Flip-Flop](images/d_flipflop.png)
 
+## D Flip-Flop
+
+A D flip-flop is a fundamental building block in digital circuit design. It stores one bit of data and is commonly used in sequential logic circuits.
+
+### Truth Table
+| CLK(clock) | D (Input) |  Q (Output)  |  ~Q (Output)  |
+|------------|-----------|--------------|---------------|
+|      ↓     |     x     |   No Change  |   No Change   |
+|      ↑     |     0     |      0       |    Set(1)   |
+|      ↑     |     1     |      1      |   Reset(0)  |
+
+
+
 ### JK Flip-Flop
 A JK flip-flop is similar to a D flip-flop but has two control inputs (J and K).
+
+### Truth Table
+| CLK(clock) | J (Input) | K(input) |  Q (Output)  |  ~Q (Output) | 
+|------------|-----------|----------|--------------|--------------|
+|      ↓     |     x     |     x    |   No Change  |  No Change   |
+|      ↑     |     0     |     0    |   No Change  |  No Change   |
+|      ↑     |     0     |     1    |   0(Reset)   |      1       |
+|      ↑     |     1     |     0    |    1(Set)    |      0       |
+|      ↑     |     1     |     1    |      ~Q      |      Q       |
 
 ![JK Flip-Flop](images/jk_flipflop.png)
 
