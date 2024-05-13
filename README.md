@@ -263,6 +263,7 @@ The state table provides a systematic representation of the FSM's behavior, deta
 ### Logic Equations
 
 The logic equations describe the Boolean expressions used to determine the next state and outputs of the FSM based on the current state and input conditions.
+
 ![Control-Dominated-System-Equation1](images/Control_Dominated_System_Equation1.png)
 
 
