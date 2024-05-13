@@ -157,6 +157,7 @@ Half adder is a combinational circuit which computer binary addition of two bina
 
 #### Truth Table:
 | Input A | Input B | Output Sum | Output Carry |
+|---------|---------|------------|--------------|
 |    0    |    0    |     0      |       0      |
 |    0    |    1    |     1      |       0      |
 |    1    |    0    |     1      |       0      |
@@ -169,6 +170,7 @@ Full adder is a combinational circuit which computer binary addition of three bi
 
 #### Truth Table:
 | Input A | Input B | Input Cin | Output Sum | Output Carry |
+|---------|---------|-----------|------------|--------------|
 |    0    |    0    |     0     |     0      |       0      |
 |    0    |    0    |     1     |     1      |       0      |
 |    0    |    1    |     0     |     1      |       0      |
