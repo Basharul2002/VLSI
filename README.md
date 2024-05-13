@@ -1,6 +1,12 @@
-# VLSI Repository
+# VLSI
 
-This repository contains various Verilog HDL implementations of VLSI components and systems.
+VHDL (VHSIC Hardware Description Language) is another hardware description language commonly used in VLSI (Very Large Scale Integration) design. It's used to describe the structure and behavior of electronic systems and is particularly popular for FPGA (Field-Programmable Gate Array) and ASIC (Application-Specific Integrated Circuit) design.
+
+In VLSI design, VHDL serves a similar purpose to Verilog HDL, allowing designers to model and simulate digital circuits before implementation. Like Verilog, VHDL supports both behavioral and structural modeling, making it versatile for various design methodologies.
+
+VHDL is known for its strong type system, which provides robustness and helps catch errors early in the design process. It also offers powerful features for hierarchical design, enabling designers to build complex systems from smaller, reusable components.
+
+In this repository, we focus on Verilog HDL implementations, but VHDL is another essential tool in the VLSI designer's toolbox.
 
 ## Contents
 
