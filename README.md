@@ -17,22 +17,23 @@ This repository contains various Verilog HDL implementations of VLSI components 
 
 Basic gates are the fundamental building blocks of digital circuits. They perform basic logic functions such as AND, OR, and NOT.
 
+
 ### NOT Gate
 The NOT gate, also known as an inverter, produces the complement of its input.
 
-Truth Table:
-
-| Input | Output |                Logic: If input is high(1) then output will be low(0)
-|-------|--------|                       otherwise output will be high(1)
+#### Truth Table:
+| Input | Output |                
+|-------|--------|                       
 |   0   |   1    |
 |   1   |   0    |
 
+**Logic:** If the input is **high (1)**, then the output will be **low (0)**. Otherwise, the output will be **high (1)**.
 ![NOT Gate](images/not_gate.png)
 
 ### AND Gate
 The AND gate produces a true output only if all of its inputs are true.
 
-Truth Table:
+#### Truth Table:
 
 | Input A | Input B | Output |
 |---------|---------|--------|
@@ -41,12 +42,14 @@ Truth Table:
 |    1    |    0    |   0    |
 |    1    |    1    |   1    |
 
+**Logic:** If all input are **high (1)**, then the output will be **high (1)**. Otherwise, the output will be **low (0)**.
+
 ![AND Gate](images/and_gate.png)
 
 ### OR Gate
 The OR gate produces a true output if any of its inputs are true.
 
-Truth Table:
+#### Truth Table:
 
 | Input A | Input B | Output |
 |---------|---------|--------|
@@ -54,6 +57,8 @@ Truth Table:
 |    0    |    1    |   1    |
 |    1    |    0    |   1    |
 |    1    |    1    |   1    |
+
+**Logic:** If the input are **low (0)**, then the output will be **low (0)**. Otherwise, the output will be **high (1)**.
 
 ![OR Gate](images/or_gate.png)
 
@@ -66,7 +71,7 @@ Universal gates are gates that can be used to construct any other gate.
 ### NAND Gate
 The NAND gate produces the complement of the AND function.
 
-Truth Table:
+#### Truth Table:
 
 | Input A | Input B | Output |
 |---------|---------|--------|
@@ -75,12 +80,14 @@ Truth Table:
 |    1    |    0    |   1    |
 |    1    |    1    |   0    |
 
+**Logic:** If all inputs are **high (1)**, then the output will be **low (0)**. Otherwise, the output will be **high (1)**.
+
 ![NAND Gate](images/nand_gate.png)
 
 ### NOR Gate
 The NOR gate produces the complement of the OR function.
 
-Truth Table:
+#### Truth Table:
 
 | Input A | Input B | Output |
 |---------|---------|--------|
@@ -88,6 +95,8 @@ Truth Table:
 |    0    |    1    |   0    |
 |    1    |    0    |   0    |
 |    1    |    1    |   0    |
+
+**Logic:** If all input are **low (0)**, then the output will be **high (1)**. Otherwise, the output will be **low (0)**.
 
 ![NOR Gate](images/nor_gate.png)
 
@@ -100,7 +109,7 @@ Exclusive gates are gates that produce a true output only if exactly one of thei
 ### EX-OR Gate
 The EX-OR gate produces a true output if its inputs are different.
 
-Truth Table:
+#### Truth Table:
 
 | Input A | Input B | Output |
 |---------|---------|--------|
@@ -109,12 +118,15 @@ Truth Table:
 |    1    |    0    |   1    |
 |    1    |    1    |   0    |
 
+**Logic:** If odd number of input are **high (1)**, then the output will be **high (1)**. Otherwise, the output will be **low (0)**
+
+
 ![EX-OR Gate](images/exor_gate.png)
 
 ### EX-NOR Gate
 The EX-NOR gate produces a true output if its inputs are the same.
 
-Truth Table:
+#### Truth Table:
 
 | Input A | Input B | Output |
 |---------|---------|--------|
@@ -122,6 +134,8 @@ Truth Table:
 |    0    |    1    |   0    |
 |    1    |    0    |   0    |
 |    1    |    1    |   1    |
+
+**Logic:** If odd number of input are **high (1)**, then the output will be **low (0)**. Otherwise, the output will be **high (1)**
 
 ![EX-NOR Gate](images/exnor_gate.png)
 
