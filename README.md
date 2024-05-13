@@ -20,15 +20,40 @@ Basic gates are the fundamental building blocks of digital circuits. They perfor
 ### NOT Gate
 The NOT gate, also known as an inverter, produces the complement of its input.
 
+Truth Table:
+
+| Input | Output |
+|-------|--------|
+|   0   |   1    |
+|   1   |   0    |
+
 ![NOT Gate](images/not_gate.png)
 
 ### AND Gate
 The AND gate produces a true output only if all of its inputs are true.
 
+Truth Table:
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+|    0    |    0    |   0    |
+|    0    |    1    |   0    |
+|    1    |    0    |   0    |
+|    1    |    1    |   1    |
+
 ![AND Gate](images/and_gate.png)
 
 ### OR Gate
 The OR gate produces a true output if any of its inputs are true.
+
+Truth Table:
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+|    0    |    0    |   0    |
+|    0    |    1    |   1    |
+|    1    |    0    |   1    |
+|    1    |    1    |   1    |
 
 ![OR Gate](images/or_gate.png)
 
@@ -41,10 +66,28 @@ Universal gates are gates that can be used to construct any other gate.
 ### NAND Gate
 The NAND gate produces the complement of the AND function.
 
+Truth Table:
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+|    0    |    0    |   1    |
+|    0    |    1    |   1    |
+|    1    |    0    |   1    |
+|    1    |    1    |   0    |
+
 ![NAND Gate](images/nand_gate.png)
 
 ### NOR Gate
 The NOR gate produces the complement of the OR function.
+
+Truth Table:
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+|    0    |    0    |   1    |
+|    0    |    1    |   0    |
+|    1    |    0    |   0    |
+|    1    |    1    |   0    |
 
 ![NOR Gate](images/nor_gate.png)
 
@@ -57,10 +100,28 @@ Exclusive gates are gates that produce a true output only if exactly one of thei
 ### EX-OR Gate
 The EX-OR gate produces a true output if its inputs are different.
 
+Truth Table:
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+|    0    |    0    |   0    |
+|    0    |    1    |   1    |
+|    1    |    0    |   1    |
+|    1    |    1    |   0    |
+
 ![EX-OR Gate](images/exor_gate.png)
 
 ### EX-NOR Gate
 The EX-NOR gate produces a true output if its inputs are the same.
+
+Truth Table:
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+|    0    |    0    |   1    |
+|    0    |    1    |   0    |
+|    1    |    0    |   0    |
+|    1    |    1    |   1    |
 
 ![EX-NOR Gate](images/exnor_gate.png)
 
