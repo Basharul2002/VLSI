@@ -22,8 +22,8 @@ The NOT gate, also known as an inverter, produces the complement of its input.
 
 Truth Table:
 
-| Input | Output |
-|-------|--------|
+| Input | Output |                Logic: If input is high(1) then output will be low(0)
+|-------|--------|                       otherwise output will be high(1)
 |   0   |   1    |
 |   1   |   0    |
 
