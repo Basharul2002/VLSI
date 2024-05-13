@@ -240,15 +240,29 @@ Prepare the design for an FSM that stays in an idle state where it generates an 
 ### Top-Level FSM Architecture
 
 Here, we present the architecture of the finite state machine (FSM) designed to control the behavior of the control-dominated system. This FSM governs the transitions between different states based on the input signals and generates corresponding outputs.
+![Control-Dominated-System-Architecture1](images/Control_Dominated_System_Architecture1.png)
 
-### State Chart
 
+### State Chart / State Diagram
 The state chart illustrates the different states of the FSM and the transitions between them based on the input conditions.
-
+![Control-Dominated-System-State-Chart1](images/Control_Dominated_System_State_Chart1.png)
 ### State Table
 
 The state table provides a systematic representation of the FSM's behavior, detailing the next state and output logic equations for each state transition.
+| Reset | PState | Input(GO) | NState | Ready(O/P) | Red(O/P) | Green(O/P) | Yellow(O/P) |
+|-------|--------|-----------|--------|------------|----------|------------|-------------|
+|   1   |   xxx  |     x     |  000   |     0      |     0    |     0      |      0      |
+|   0   |   000  |     0     |  000   |     1      |     0    |     0      |      0      |
+|   0   |   000  |     1     |  001   |     1      |     0    |     0      |      0      |
+|   0   |   001  |     x     |  010   |     0      |     1    |     0      |      0      |
+|   0   |   010  |     x     |  011   |     0      |     1    |     0      |      0      |
+|   0   |   011  |     x     |  100   |     0      |     0    |     1      |      0      |
+|   0   |   100  |     x     |  101   |     0      |     0    |     1      |      0      |
+|   0   |   101  |     x     |  110   |     0      |     0    |     0      |      1      |
 
 ### Logic Equations
 
 The logic equations describe the Boolean expressions used to determine the next state and outputs of the FSM based on the current state and input conditions.
+![Control-Dominated-System-Equation1](images/Control_Dominated_System_Equation1.png)
+
+
