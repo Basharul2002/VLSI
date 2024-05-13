@@ -6,7 +6,7 @@ In VLSI design, VHDL serves a similar purpose to Verilog HDL, allowing designers
 
 VHDL is known for its strong type system, which provides robustness and helps catch errors early in the design process. It also offers powerful features for hierarchical design, enabling designers to build complex systems from smaller, reusable components.
 
-In this repository, we focus on Verilog HDL implementations, but VHDL is another essential tool in the VLSI designer's toolbox.
+In this repository, focus on Verilog HDL implementations, but VHDL is another essential tool in the VLSI designer's toolbox.
 
 ## Contents
 
