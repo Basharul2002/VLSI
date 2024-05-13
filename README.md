@@ -194,7 +194,6 @@ D flip-flop is also known as delay type flip-flop because output of d flip-flop 
 
 ![D Flip-Flop](images/d_flipflop.png)
 
-## D Flip-Flop
 
 A D flip-flop is a fundamental building block in digital circuit design. It stores one bit of data and is commonly used in sequential logic circuits.
 
