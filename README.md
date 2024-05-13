@@ -28,6 +28,7 @@ The NOT gate, also known as an inverter, produces the complement of its input.
 |   1   |   0    |
 
 **Logic:** If the input is **high (1)**, then the output will be **low (0)**. Otherwise, the output will be **high (1)**.
+
 ![NOT Gate](images/not_gate.png)
 
 ### AND Gate
