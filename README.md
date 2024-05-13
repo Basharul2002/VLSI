@@ -268,4 +268,4 @@ The logic equations describe the Boolean expressions used to determine the next 
 
 
 ### Functional Simulation/RTL Simulation: 
-![Control-Dominated-System-Equation1](images/Control_Dominated_System_1Functional_Simulation_or_RTL_Simulation.png)
+![Control-Dominated-System-Equation1](images/Control_Dominated_System_1_Functional_Simulation_or_RTL_Simulation.png)
