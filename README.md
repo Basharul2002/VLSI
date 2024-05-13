@@ -17,7 +17,6 @@ This repository contains various Verilog HDL implementations of VLSI components 
 
 Basic gates are the fundamental building blocks of digital circuits. They perform basic logic functions such as AND, OR, and NOT.
 
-
 ### NOT Gate
 The NOT gate, also known as an inverter, produces the complement of its input.
 
@@ -121,7 +120,6 @@ The EX-OR gate produces a true output if its inputs are different.
 
 **Logic:** If odd number of input are **high (1)**, then the output will be **high (1)**. Otherwise, the output will be **low (0)**
 
-
 ![EX-OR Gate](images/exor_gate.png)
 
 ### EX-NOR Gate
@@ -181,9 +179,26 @@ A D register is a set of D flip-flops used to store multiple bits of data.
 
 ## Control-Dominated System <a name="control-dominated-system"></a>
 
-A control-dominated system is a digital system controlled by a finite state machine (FSM).
+A control-dominated system is a digital system controlled by a finite state machine (FSM). In digital design, an FSM is a mathematical model of computation used to design sequential logic circuits. It consists of a finite number of states, transitions between these states triggered by inputs, and outputs associated with certain states.
 
 Prepare the design for an FSM that stays in an idle state where it generates an output called Ready and evaluates the state of an input called Go. If Go is low, it stays in the idle state. If Go is high, it generates three outputs—Red, Green, and Yellow—consecutively (one after another) for 3s, 3s, and 1s, respectively. The clock frequency is 1 Hz. Apply binary state encoding. Show FSM architecture, state chart, state table, and logic equations for next states and outputs.
 
 ![Control-Dominated System](images/control_system.png)
 
+## Solution
+
+### Top-Level FSM Architecture
+
+Here, we present the architecture of the finite state machine (FSM) designed to control the behavior of the control-dominated system. This FSM governs the transitions between different states based on the input signals and generates corresponding outputs.
+
+### State Chart
+
+The state chart illustrates the different states of the FSM and the transitions between them based on the input conditions.
+
+### State Table
+
+The state table provides a systematic representation of the FSM's behavior, detailing the next state and output logic equations for each state transition.
+
+### Logic Equations
+
+The logic equations describe the Boolean expressions used to determine the next state and outputs of the FSM based on the current state and input conditions.
